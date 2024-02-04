@@ -1,0 +1,39 @@
+#include <bits/stdc++.h>
+using namespace std;
+int
+main ()
+{
+  int n, say = 0, say1 = 0;
+  cin >> n;
+  string s1;
+  set < int >s;
+
+  while (n--)
+	{
+	  cin >> s1;
+	  for (int i = 0; i < s1.size (); i++)
+		{
+		  s.insert (count (s1.begin (), s1.end (), s1[i]));
+		}
+	  vector < long >v (s.begin (), s.end ());
+	  for (int i = 0; i < v.size (); i++)
+		{
+		  if (v[i] % 2 == 0)
+			{
+			  say1++;
+			}
+		}
+	  if (say1 == v.size ())
+		{
+		  say++;
+		}
+	  say1 = 0;
+	  v.clear ();
+	  s.clear ();
+
+
+
+
+	}
+  cout << say;
+}
