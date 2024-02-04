@@ -1,0 +1,29 @@
+#include <bits/stdc++.h>
+using namespace std;
+int
+main ()
+{
+  long long a, b, c, d, f, e, say = 0;
+  cin >> a;
+  while (a--)
+	{
+	  cin >> b >> c;
+	  f = b;
+	  e = c;
+	  b = round (sqrt (b));
+	  c = round (sqrt (c));
+	  for (int i = b; i <= c; i++)
+		{
+		  if (i * i >= f and i * i <= e)
+			{
+			  say++;
+			}
+
+		}
+
+
+	  cout << say << endl;
+	  say = 0;
+	}
+
+}
